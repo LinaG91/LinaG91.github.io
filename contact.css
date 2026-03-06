@@ -1,0 +1,170 @@
+/* General Styling */
+body.contact-page {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Black background for entire page */
+    color: #fff;  /* White text color */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2rem;
+    background-color: #000;  /* Black background for header */
+    color: white;  /* White text */
+}
+
+/* Header and Logo */
+.contact-page .logo {
+    text-align: left;  /* Align the logo to the left */
+    margin: 10px 0;
+}
+
+.contact-page .logo img {
+    width: 250px;  /* Adjust logo size */
+    height: auto;
+}
+
+/* Page Title */
+.contact-page h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #C9A66B;  /* Gold accent */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #C9A66B;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Contact Information Section */
+.contact-page .contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact-page .contact-info a {
+    color: #C9A66B;  /* Gold accent */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-page .contact-info a:hover {
+    color: #edeced;  /* Darker gold */
+}
+
+/* Form Styling */
+.contact-page form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #222;  /* Dark background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;  /* White text */
+    margin-top: 15px;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #333;  /* Dark background for input fields */
+    color: #fff;  /* White text inside input */
+    transition: border 0.3s;
+}
+
+.contact-page form input:focus,
+.contact-page form textarea:focus {
+    border-color: #C9A66B;  /* Gold border on focus */
+    outline: none;
+}
+
+/* Buttons Styling */
+.contact-page form input[type="submit"],
+.contact-page form input[type="reset"] {
+    font-size: 1rem;
+    color: white;
+    background-color: #C9A66B; /* Gold button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block; /* Align buttons side by side */
+    margin-top: 20px; /* Same top margin for both buttons */
+}
+
+.contact-page form input[type="submit"]:hover,
+.contact-page form input[type="reset"]:hover {
+    background-color: #a47e54;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page form input[type="reset"] {
+    margin-left: 10px; /* Spacing between the buttons */
+    background-color: #e57373; /* Soft red */
+}
+
+.contact-page form input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Other styles remain the same */
+
+
+/* Navigation */
+nav {
+    background-color: #Black; /* Dark background for navigation */
+    text-align: center;
+    padding: 20px 0;  /* Added padding for spacing */
+    width: 100%;  /* Ensure full width */
+    margin-top: 40px;  /* Added margin top to create spacing from the video */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green button color */
+    border-radius: 10px;
+    margin: 0 20px;  /* Adjusted margin for better spacing */
+    font-size: 1.1rem;
+}
+
+nav ul a:hover {
+    background-color: #6a3b8c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #000;  /* Black background for footer */
+    color: white;  /* White text */
+    margin-top: 40px;
+}

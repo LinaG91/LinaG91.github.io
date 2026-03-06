@@ -1,0 +1,167 @@
+/* General Body Styling */
+body.honors-page {
+    font-family: 'Roboto', sans-serif;
+    background: Black;  /* Adding a gradient background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.8);  /* Transparent black header */
+    color: white;
+    padding: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Fix the Logo Position to Top Left, Stays Fixed */
+header .logo {
+    position: absolute;  /* Absolute positioning */
+    top: 10px;
+    left: 45px;
+    z-index: 1000;  /* Ensure the logo stays on top of other elements */
+}
+
+header .logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Header Text Styling */
+header h1 {
+    font-family: 'Poppins', sans-serif;  /* Modern font for headings */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #Black;
+    padding: 20px;
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+    background: linear-gradient(135deg, #1a1a1a, #333333);  /* Gradient effect */
+}
+
+/* Main Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+/* Left and Right Columns Styling */
+.left-column, .right-column {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);  /* Deeper shadow for depth */
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Left Column Header */
+.left-column h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* List Style for Honors */
+.left-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.left-column ul li {
+    margin-bottom: 12px;
+    font-size: 1.2rem;  /* Larger font size for clarity */
+}
+
+/* Right Column Header */
+.right-column h3 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.right-column p {
+    font-size: 1.2rem;
+    line-height: 1.7;  /* Slightly larger line height for better readability */
+}
+
+/* Navigation */
+nav {
+    background-color: #Black; /* Dark background for navigation */
+    text-align: center;
+    padding: 20px 0;  /* Added padding for spacing */
+    width: 100%;  /* Ensure full width */
+    margin-top: 40px;  /* Added margin top to create spacing from the video */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green button color */
+    border-radius: 10px;
+    margin: 0 20px;  /* Adjusted margin for better spacing */
+    font-size: 1.1rem;
+}
+
+nav ul a:hover {
+    background-color: #6a3b8c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #000;  /* Black background for footer */
+    color: white;  /* White text */
+    margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        min-width: 100%; /* Make columns stack */
+        margin-bottom: 20px; /* Add space between columns */
+    }
+}

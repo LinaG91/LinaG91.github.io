@@ -1,0 +1,147 @@
+/* General Body Styling */
+body.about-page {
+    font-family: 'Roboto', sans-serif;
+    background: Black;  /* Adding a gradient background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.8);  /* Transparent black header */
+    color: white;
+    padding: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Fix the Logo Position to Top Left, Stays Fixed */
+header .logo {
+    position: absolute;  /* Absolute positioning */
+    top: 10px;
+    left: 45px;
+    z-index: 1000;  /* Ensure the logo stays on top of other elements */
+}
+
+header .logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Header Text Styling */
+header h1 {
+    font-family: 'Poppins', sans-serif;  /* Modern font for headings */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 60px auto; /* Increased margin for spacing */
+    background-color: #000;
+    padding: 30px; /* Increased padding */
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+    background: linear-gradient(135deg, #1a1a1a, #333333);  /* Gradient effect */
+}
+
+/* Paragraph Styling */
+.intro p {
+    font-size: 1.2rem;  /* Increase font size for readability */
+    line-height: 1.8;  /* Increase line height for better readability */
+    color: #ccc;  /* Softer color for the text */
+    max-width: 800px;  /* Limit the width for a more focused reading area */
+    margin: 20px auto;  /* Center the paragraph and add spacing between paragraphs */
+    padding: 15px;  /* Add padding for a less cramped look */
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent background for readability */
+    border-radius: 8px;  /* Slight rounding of corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Soft shadow for depth */
+    text-align: justify;  /* Justify the text for a clean look */
+}
+
+/* Optional: Add a small margin at the bottom of each paragraph */
+.intro p + p {
+    margin-top: 25px;
+}
+
+/* YouTube Video Section */
+.videos {
+    text-align: center; /* Ensures the video container is centered */
+    margin: 60px auto;  /* Increased margin for spacing */
+}
+
+.video-container {
+    display: inline-block; /* Ensures the container is treated as an inline element */
+    text-align: center;  /* Centers the video content within the container */
+}
+
+iframe {
+    max-width: 100%;  /* Ensures the video stays responsive */
+    height: 315px;
+    width: 560px;
+}
+
+/* Responsive Video */
+@media (max-width: 768px) {
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Navigation */
+nav {
+    background-color: #Black; /* Dark background for navigation */
+    text-align: center;
+    padding: 20px 0;  /* Added padding for spacing */
+    width: 100%;  /* Ensure full width */
+    margin-top: 40px;  /* Added margin top to create spacing from the video */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green button color */
+    border-radius: 10px;
+    margin: 0 20px;  /* Adjusted margin for better spacing */
+    font-size: 1.1rem;
+}
+
+nav ul a:hover {
+    background-color: #6a3b8c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #000;  /* Black background for footer */
+    color: white;  /* White text */
+    margin-top: 40px;
+}

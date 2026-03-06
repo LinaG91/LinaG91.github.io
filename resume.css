@@ -1,0 +1,191 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;  /* Modern and clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Set background to black */
+    color: #fff;  /* White text color for readability */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #000;  /* Keep header background black */
+    color: white;  /* White text */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Adjust Logo Position */
+header .logo {
+    position: absolute;
+    top: 15px; /* Position the logo 15px from the top */
+    left: 20px; /* Position the logo 20px from the left */
+}
+
+header .logo-image {
+    width: auto;
+    height: auto;
+    max-width: 220px; /* Slightly larger logo */
+    max-height: 220px; /* Maintain proportion with the new max width */
+}
+
+/* Header Container for Profile Info */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 80px; /* To avoid overlap with the logo */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #black; /* White background for the square box */
+    width: 200px; /* Width of the square */
+    height: 200px; /* Height of the square */
+    border-radius: 5px; /* Slight rounding for the square box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure the image fits within the square box */
+    margin: 0 auto 20px; /* Center the box and add bottom spacing */
+}
+.resume-photo {
+    width: 100%; /* Make the image fill the square */
+    height: 100%; /* Keep the height proportional */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    border-radius: 0; /* Remove circular styling for the square shape */
+}
+
+.header-info h1 {
+    font-size: 2.1rem;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 700;  /* Bold for name */
+    text-transform: capitalize;
+}
+
+.header-info p {
+    font-size: 1.1rem;
+    color: #ddd;  /* Slightly softer color for less emphasis */
+}
+
+/* Main Content Section */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Left and Right Columns */
+.left-column, .right-column {
+    background-color: #1c1c1c; /* Leave columns with darker background */
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  /* Softer shadow for depth */
+}
+
+/* Section Headers */
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffcc00;  /* Bright color for section headings */
+    font-weight: 600;
+}
+
+/* List Style for Skills and Work Experience */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #Black; /* Dark background for navigation */
+    text-align: center;
+    padding: 20px 0;  /* Added padding for spacing */
+    width: 100%;  /* Ensure full width */
+    margin-top: 40px;  /* Added margin top to create spacing from the video */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green button color */
+    border-radius: 10px;
+    margin: 0 20px;  /* Adjusted margin for better spacing */
+    font-size: 1.1rem;
+}
+
+nav ul a:hover {
+    background-color: #6a3b8c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #000;  /* Black background for footer */
+    color: white;  /* White text */
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;  /* Stack columns on smaller screens */
+    }
+    
+    .header-container {
+        flex-direction: column;
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .resume-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .left-column, .right-column {
+        padding: 20px;
+    }
+
+    nav ul a {
+        font-size: 1rem;  /* Smaller text for mobile */
+        padding: 10px 20px;
+    }
+}
